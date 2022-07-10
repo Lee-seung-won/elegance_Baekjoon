@@ -1,0 +1,10 @@
+import sys
+input = sys.stdin.readline
+n = int(input())
+pos_list = []
+for i in range(n):
+    x,y = map(int,input().split())
+    pos_list.append((y,x))
+pos_list = sorted(pos_list)
+for y,x in pos_list:
+    print(x,y)
