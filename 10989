@@ -1,0 +1,11 @@
+import sys
+input = sys.stdin.readline
+n = int(input())
+num_cnt = [0]*10001
+for i in range(n):
+    num = int(input())
+    num_cnt[num] += 1
+for n,i in enumerate(num_cnt):
+    if i!=0:
+        for _ in range(i):
+            print(n)
